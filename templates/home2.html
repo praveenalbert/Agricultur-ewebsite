@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='Main.css')}}">
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+      function loadGoogleTranslate() {
+        new google.translate.TranslateElement("myid")
+      }
+    </script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <style>
+    .topnav
+    {
+      margin:0% 2%;
+ 
+    }
+    .Search
+    {
+      margin: 2% 2%;
+    
+    }
+    a
+    {
+      margin: 0% 2%;
+      
+    }
+    .container
+    {
+      margin: 2% ;
+      border: 2pc solid black;
+    }
+  </style>
+  <div class="topnav">
+    <a class="active" href="/c">Expert Advise </a>
+         <a  href="#about">About</a></li>
+        <a href="#contact">Contact</a>
+        <a href="/weather">Weather_forecast</a>
+  </div>
+  
+  <br>
+
+  <li class="Search"><i id="myid" style="color:white; width: 100%"
+    class="dropdown dropdown-content">Choose Your Language </i></li>
+  <div class="container">
+   
+    <div class="title">Check Market Price for your crop</div>
+    <div class="content">
+      <form method="POST",action="/home">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Enter Your Location</span>
+            <input type="text" name='l'placeholder="Enter your Town" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Vegitable Type</span>
+            <input type="text" name='v'placeholder="Enter your Veg" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Season Type</span>
+            <input type="text" name="s" placeholder="Enter Season " required>
+          </div>
+          <div class="input-box">
+            <span class="details">Month</span>
+            <input type="text" name="m" placeholder="Enter month " required>
+          </div>
+          <div class="input-box">
+            <span class="details">Temperature</span>
+            <input type="text" name='t'placeholder="Enter your Temperature " required>
+          </div>
+          <div class="input-box">
+            <span class="details">Vegitable Condition</span>
+            <input type="text" name='vc' placeholder="either fresh or average" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Quantity</span>
+            <input type="text" name='q' placeholder="should give number only" required>
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="e" id="dot-1">
+            <input type="radio" name="e" id="dot-2">
+            <input type="radio" name="e" id="dot-3">
+            <span class="gender-title">Desaster Happens Last 3 months</span>
+            <div class="category">
+              <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Yes</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">No</span>
+            </label>
+            </div>
+       
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div>
+    {{data}}
+  </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+{% extends "head.html" %} 
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+
+
+{% block content %}
+<!-- Start Main Top -->
+{{super()}}
+<!-- End Main Top -->
+{% block nav %} 
+
+    <!-- End Main Top -->
+    <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+            <li class="nav-item "><a class="nav-link" href="/index">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="/cart">market prices</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="sample.html">chat bot</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+        </ul>
+    </div>{%endblock%}
+    <!-- Start Top Search -->
+<div class="bg-dark">
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+    <!-- Start All Title Box -->
+    
+    <!-- End All Title Box -->
+
+    <!-- Start Shop Page  -->
+    <div class="shop-box-inner">
+        <div class="">
+            <div class="row">
+                
+                    
+                    <div class="product-categori " style="margin-left: 25%; width: 50%;">
+                        <div class="search-product">
+                            <form action="/shop" method="post">
+                                <input class="form-control" placeholder="Search here..." type="text" name="city">
+                                <button type="submit"> <i class="fa fa-search"></i> </button>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%if temp %}
+    
+        <section style="height: 400px;">
+            <div class="container">
+          
+              <div class="row d-flex justify-content-center align-items-center mb-0 pb-0">
+                <div class="col-md-9 col-lg-7 col-xl-5">
+          
+                  <div class="card  gradient-custom" style="border-radius: 25px;">
+                    <div class="card-body ">
+          
+                      <div id="demo1" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                          <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                    
+                        </ul>
+                        <!-- Carousel inner -->
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="d-flex justify-content-between ">
+                              <div>
+                                <h2 class="display-2 text-black"><strong>{{temp}}°C</strong></h2>
+                                <p class="text-muted mb-0 text-light">{{city}}, {{country}}</p>
+                              </div>
+                              <div>
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
+                                  width="150px">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          
+                    </div>
+                  </div>
+          </div></div>
+                  
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+          
+            </div>
+          </section>
+
+    
+    {%endif%}
+    
+    <!-- End Shop Page -->
+
+    <!-- Start Instagram Feed  -->
+    
+    <!-- End Instagram Feed  -->
+
+
+    <!-- Start Footer  -->
+    
+        {% endblock %}
+        
+   

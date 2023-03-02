@@ -1,0 +1,28 @@
+
+  <!-- Created By CodingLab - www.codinglabweb.com -->
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="UTF-8">
+      <!---<title> Responsive Registration Form | CodingLab </title>--->
+      
+      <link rel="stylesheet" href="{{ url_for('static' ,filename='Main.css')}}">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+        <script>
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement("myid")
+        }
+      </script>
+     <li class="Search"><i id="myid" style="color:white; width: 100%"
+        class="dropdown dropdown-content">Choose Your Language </i></li>
+      <form method="POST",action="/Chatgpt">
+        <div class="form-outline">
+            <h1>Connect with Experts and get solutions (Either market price or diagonse of crops </h1>
+            <input type="search" name="command" class="form-control" placeholder="How can help you" aria-label="Search" />
+        </div>
+       <h1>Answers</h1>
+       <h5>{{res}}</h5>
+      </form>
+  </body>
+  
+  </html>

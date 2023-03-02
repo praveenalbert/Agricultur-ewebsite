@@ -1,0 +1,465 @@
+
+<!-- Basic -->
+
+
+{% extends "head.html" %} 
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+
+
+{% block content %}
+<!-- Start Main Top -->
+{{super()}}
+<!-- End Main Top -->
+{% block nav %} 
+<head>
+
+</head>
+<div class="collapse navbar-collapse" id="navbar-menu">
+    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+        <li class="nav-item active"><a class="nav-link" href="/index">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/home2">Crop Management</a></li>
+        <li class="nav-item"><a class="nav-link" href="sample.html">chat bot</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+        <li class="nav-item">  <li class="Search"><i id="myid1" style="color:black; width: 100%"
+            class="dropdown dropdown-content">Choose Your Language </i></li></li>
+    </ul>
+</div>{%endblock%}
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+
+<!-- End Top Search -->
+
+<!-- Start Slider -->
+<!-- Start Slider -->
+<div id="slides-shop" class="cover-slides">
+    <ul class="slides-container">
+        <li class="text-center">
+            <img src="static/images/agri1.jpg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>A farmer is a  <br> Magician</strong></h1>
+                        <p class="m-b-40">who produces money from the mud, and is the only man in our economy who buys everything at retail <br>and sells every thing at wholesale, and pays the freight both ways</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="static/images/agri2.jpg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Agriculture <br>  wisest pursuit</strong> </h1>
+                        <p class="m-b-40">because it will in the end contribute most to real wealth, good morals & happiness.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="static/images/agri3.jpg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20"><strong>Farming <br> profession of Hope</strong></h1>
+                        <p class="m-b-40"> No race can prosper until it learns there is as much dignity in tilling a field as in writing a poem.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="slides-navigation">
+        <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    </div>
+</div>
+<!-- Start Products  -->
+<div class="products-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-all text-center">
+                    <h1>Methods and Machinery</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="special-menu text-center">
+                    <div class="button-group filter-button-group">
+                        <button class="active" data-filter="*">All</button>
+                        <button data-filter=".top-featured">Featured</button>
+                        <button data-filter=".best-seller">Best Recommended</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row special-list">
+            <div class="col-lg-3 col-md-6 special-grid best-seller">
+                <div class="products-single fix">
+                    <div class="box-img-hover">
+                        <!-- <div class="type-lb">
+                            <p class="sale">Sale</p>
+                        </div> -->
+                        <img src="static/images/new5.jpg" class="img-fluid" alt="Image">
+                        <div >
+                            <!-- <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                            </ul> -->
+                            <!-- <a class="cart" href="#">Add to Cart</a> -->
+                        </div>
+                    </div>
+                    <div class="why-text">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 special-grid top-featured">
+                <div class="products-single fix">
+                    <div class="box-img-hover">
+                        <!-- <div class="type-lb">
+                            <p class="new">New</p>
+                        </div> -->
+                        <img src="static/images/new4.jpg" class="img-fluid" alt="Image">
+                        <div >
+                            <!-- <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                            </ul> -->
+                            <!-- <a class="cart" href="#">Add to Cart</a> -->
+                        </div>
+                    </div>
+                    <div class="why-text">
+                     
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 special-grid top-featured">
+                <div class="products-single fix">
+                    <div class="box-img-hover">
+                        <!-- <div class="type-lb">
+                            <p class="sale">Sale</p>
+                        </div> -->
+                        <img src="static/images/new3.jpg" class="img-fluid" alt="Image">
+                        <div >
+                            <!-- <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                            </ul>
+                            <a class="cart" href="#">Add to Cart</a> -->
+                        </div>
+                    </div>
+                    <div class="why-text">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 special-grid best-seller">
+                <div class="products-single fix">
+                    <div class="box-img-hover">
+                        <!-- <div class="type-lb">
+                            <p class="sale">Sale</p>
+                        </div> -->
+                        <img src="static/images/new1.jpg" class="img-fluid" alt="Image">
+                        <div >
+                            <!-- <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                            </ul>
+                            <a class="cart" href="#">Add to Cart</a> -->
+                        </div>
+                    </div>
+                    <div class="why-text">
+                        
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="div1">
+    <h1>Click on the district and on your block to know the details of the crop</h1><br>
+    <button onclick="show(1)"><span>kadapa</span></button>
+    <button onclick="show(2)"><span>kurnool</span></button>
+    <button onclick="show(3)"><span>chittor</span></button>
+    <button onclick="show(4)"><span>anantapur</span></button>
+    <button onclick="show(5)"><span>nelloru</span></button>
+    <button onclick="show(6)"><span>krishna</span></button>
+    <button onclick="show(7)"><span>prakasham</span></button>
+    <button onclick="show(8)"><span>guntur</span></button>
+    <button onclick="show(9)"><span>west godavari</span></button>
+    <button onclick="show(10)"><span>east godavari</span></button>
+    <button onclick="show(11)"><span>visakapatnam</span></button>
+    <button onclick="show(12)"><span>vijayanagaram</span></button>
+    <button onclick="show(13)"><span>srikakulam</span></button>
+    <div id="photos" class="div2">
+        
+    </div>
+    <div class="div3" id="crops"> </div>
+    </div>
+    <div class="rows">
+    <div class="col-md-3 col-sm-4 col-xs-12">
+        <aside class="sidebar" style="margin:10px 10px 10px 10px;">       
+            <article class="column progress-column clr-orange">
+                <div class="inner-box">
+                    <div class="top-icon"></div>
+                         
+                    <div class="widget links-widget" style="margin-bottom:0;">
+                            <h3><b><u>Important Links</u></b></h3>
+                            <ul>
+                                <li><a href="./pdf/farmerbook.pdf" target="_blank">Crops Management</a></li>
+                                <li><a href="#">Additional Crops</a></li>
+                                
+                                <li><a href="#">Integrated Plant Protection</a></li>
+                                <li><a href="#">Organic farming</a></li>
+                                <li><a href="#">Farm Mechanization</a></li>
+                                <li><a href="http://soilhealth.dac.gov.in">Soil Health Card</a></li>
+                                <li><a href="#">Market Price</a></li>
+                                <li><a href="#">Weather</a></li>
+                                <li><a href="#">Farmer Questions</a></li>
+                                <li><a href="#">Success stories</a></li>
+                                <li><a href="2020/Agriculture Department  Group SIM Numbers-BSNL.xlsx" target="_blank">Phone Numbers</a></li>
+                                <li><a href="#">My History</a></li>
+                                <li><a href="#">Media News</a></li>
+                                <li><a href="#">Departments</a></li>
+                                <li><a href="#">Dealers List</a></li>
+                                <li><a href="#">Agriculture Department</a></li> 
+                            </ul>
+                    </div>
+                </div>
+            </article>             
+        </aside>
+    </div>
+ </div>
+ 
+<style>
+    .div1
+{
+    margin: 0% 10%;
+    
+    
+}
+.div2
+{
+    margin:0% 10%;
+    
+    display: inline-block;
+    
+}
+.div3
+{
+    margin-left: 10% 10%;
+
+   
+    display: inline-block;
+}
+.crop
+{
+    border-radius: 40%;
+    height: 100px;
+    width: 100px;
+    margin: 5%;
+}
+button
+{
+    padding: 10px;
+}
+</style>
+<script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+<script>
+
+        function loadGoogleTranslate() {
+          new google.translate.TranslateElement("myid1")
+        }
+     
+    
+    function show(i)
+    {
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'
+        switch(i)
+        {
+            case 1:
+        image='<img src="/static/images/districts/kadapa.jpg" alt="kadapa " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+        case 2:
+        image='<img src="/static/images/districts/kurnool.jpg" alt="kurnool " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'
+        
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+        case 3:
+        image='<img src="/static/images/districts/chittor.jpg" alt="kurnool " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+            case 4:
+        image='<img src="/static/images/districts/anantapur.jpg" alt="kadapa " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'
+        
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+        case 5:
+        image='<img src="/static/images/districts/nellore.jpg" alt="kadapa " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '
+       
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+        case 6:
+        image='<img src="/static/images/districts/krishna.jpg" alt="kadapa " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'
+        
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+        case 7:
+        image='<img src="/static/images/districts/prakasham.jpg" alt="kadapa " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '
+        
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+        case 8:
+        image='<img src="/static/images/districts/guntur.jpg" alt="kadapa " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'
+        
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+        case 9:
+        image='<img src="/static/images/districts/westgodavari.jpg" alt="kadapa " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'
+        
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+        case 10:
+        image='<img src="/static/images/districts/eastgodavari.jpg" alt="kadapa " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+        case 11:
+        image='<img src="/static/images/districts/vizag.jpg" alt="kadapa " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+        case 12:
+        image='<img src="/static/images/districts/vijayanagaram.jpg" alt="kadapa " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+        case 13:
+        image='<img src="/static/images/districts/sirkakulam.jpg" alt="kadapa " height="500px" width="500px" >'
+        crops='<img src="/static/images/crops/paddy.jpg" class="crop"> '+
+        '<img src="/static/images/crops/redgram.jpg" class="crop"> '+
+        '<img src="/static/images/crops/cotton.jpg" class="crop">'+
+        '<img src="/static/images/crops/corn.jpg" class="crop"><br>'+
+        '<img src="/static/images/crops/groundnuts.jpg" class="crop"> '+
+        '<img src="/static/images/crops/sugercane.jpg" class="crop">'
+        
+        document.getElementById('photos').innerHTML=image;
+        document.getElementById('crops').innerHTML=crops;break;
+        
+        }
+    }
+</script>
+<!-- Start Footer  -->
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"2dd167d7856fabb3f590cd4384b3c2928","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+</script>
+
+{% endblock %}
+{% block foot %} 
+{{super()}}
+{% endblock %}
